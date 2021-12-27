@@ -26,7 +26,7 @@ def upload():
         is_ajax = True
 
     # Target folder for these uploads.
-    target = "uploadr/static/uploads/{}".format(upload_key)
+    target = "uploads/{}".format(upload_key)
     try:
         os.mkdir(target)
     except:
@@ -57,7 +57,7 @@ def upload_complete(uuid):
     """The location we send them to at the end of the upload."""
 
     # Get their files.
-    root = "uploadr/static/uploads/{}".format(uuid)
+    root = "uploads/{}".format(uuid)
     if not os.path.isdir(root):
         return "Error: UUID not found!"
 
