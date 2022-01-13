@@ -28,7 +28,7 @@ def upload():
     # Target folder for these uploads.
     target = "uploads/{}".format(upload_key)
     try:
-        os.mkdir(target)
+        os.makedirs(target)
     except:
         if is_ajax:
             return ajax_response(False, "Couldn't create upload directory: {}".format(target))
