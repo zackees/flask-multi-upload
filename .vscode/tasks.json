@@ -6,7 +6,7 @@
     {
       "label": "runserver",
       "type": "shell",
-      "command": "python runserver.py",
+      "command": "python run.py",
       "problemMatcher": [],
       "group": {
         "kind": "build",
