@@ -26,3 +26,14 @@ body {
     height: 100%;
     background-color: #0099FF;
 }
+
+#upload-button {
+    border: 1px solid #000000;
+    background-color: #0099FF;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: small;
+    padding: 20px 200px;
+    margin: 10px;
+    cursor: pointer;
+}

@@ -12,12 +12,13 @@
 
 <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
     <strong>Files:</strong><br>
-    Select files OR drag them into the box below.
-    <input id="file-picker" type="file" name="file" accept="*" multiple><p>
 
     <div id="dropbox">
         Drag and Drop Files Here
     </div><p>
+
+    Or select files to upload:<br>
+    <input id="file-picker" type="file" name="file" accept="*" multiple><p>
 
     <fieldset id="progress" style="display: none">
         <legend>Files Progress</legend>
